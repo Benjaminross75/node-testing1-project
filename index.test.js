@@ -29,19 +29,30 @@ describe('[Exercise 1] trimProperties', () => {
    })
  })
 
-//  describe('[Exercise 3] findLargestInteger', () => {
-//    // test('[5] returns the largest number in an array of objects { integer: 2 }', () => {})
-//  })
+ describe('[Exercise 3] findLargestInteger', () => {
+    test('[5] returns the largest number in an array of objects { integer: 2 }', () => {
+     const input = [{ integer: 1 }, { integer: 3 }, { integer: 2 }]
+     const input1 = [{ integer: 3 }, { integer: 1 }, { integer: 2 }]
+     const input2 = [{ integer: 1 }, { integer: 6 }, { integer: 3 }]
+     const actual = utils.findLargestInteger(input)
+     const actual2 = utils.findLargestInteger(input1)
+     const actual3 = utils.findLargestInteger(input2)
+     expect(actual).toEqual(3)
+     expect(actual2).toEqual(3)
+     expect(actual3).toEqual(6)
 
-//  describe('[Exercise 4] Counter', () => {
-//    let counter
-//    beforeEach(() => {
-//      counter = new utils.Counter(3) // each test must start with a fresh couter
-//     })
-//    // test('[6] the FIRST CALL of counter.countDown returns the initial count', () => {})
-//    // test('[7] the SECOND CALL of counter.countDown returns the initial count minus one', () => {})
-//    // test('[8] the count eventually reaches zero but does not go below zero', () => {})
-//  })
+    })
+  })
+
+  // describe('[Exercise 4] Counter', () => {
+  //   let counter
+  //   beforeEach(() => {
+  //     counter = new utils.Counter(3) // each test must start with a fresh couter
+  //   })
+  //   test.todo('[6] the FIRST CALL of counter.countDown returns the initial count', () => {})
+  //   test.todo('[7] the SECOND CALL of counter.countDown returns the initial count minus one', () => {})
+  //    test.todo('[8] the count eventually reaches zero but does not go below zero', () => {})
+  // })
 
 //  describe('[Exercise 5] Seasons', () => {
 //    let seasons
